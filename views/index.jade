@@ -1,0 +1,26 @@
+extends layout
+
+block content
+    .container-fluid
+        #vmiddle.row
+            .col-md-3.col-sm-12.col-xs-12
+                h1 Black Bitcoiners
+                p Justice in the New Economy
+
+                a(href='/facebook.com/blackbitcoiners')
+                                button.arrow facebook >
+                a(href='/contact')
+                                button.arrow twitter >
+                a(href='/contact')
+                                button.arrow github >
+
+            .col-md-8.whitebox.col-sm-12.col-xs-12
+                .col-md-12    
+                    h1.text-center Want to learn more?
+
+                .col-md-12
+                    
+                    form
+                        input#learnmoreemail(type='text', placeholder='Your Email Address') 
+                         
+                        input#learnmoresubmit(type='submit', value='Submit')
