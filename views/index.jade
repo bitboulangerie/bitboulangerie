@@ -4,14 +4,15 @@ block content
     .container-fluid
         #vmiddle.row
             .col-md-3.col-sm-12.col-xs-12
-                h1 Black Bitcoiners
+                h1
+                    strong Black Bitcoiners
                 p Justice in the New Economy
 
-                a(href='/facebook.com/blackbitcoiners')
+                a(href='//facebook.com/blackbitcoiners')
                                 button.arrow facebook >
-                a(href='/contact')
+                a(href='//twitter.com/blackbitcoiners')
                                 button.arrow twitter >
-                a(href='/contact')
+                a(href='//github.com/blackbitcoiners')
                                 button.arrow github >
 
             .col-md-8.whitebox.col-sm-12.col-xs-12
@@ -19,8 +20,7 @@ block content
                     h1.text-center Want to learn more?
 
                 .col-md-12
-                    
-                    form
+                    form(action='submitemail' method='post')
                         input#learnmoreemail(type='text', placeholder='Your Email Address') 
                          
                         input#learnmoresubmit(type='submit', value='Submit')
