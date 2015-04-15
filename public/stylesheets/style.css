@@ -7,9 +7,14 @@ h1{
     font-size: 40pt;
 }
 #vmiddle{
-    margin-top: 20%;
+    margin-top: 10%;
 }
-
+#socialrow{
+    margin-top:2%;
+}
+a{
+    color:black;
+}
 
 button.arrow{
     background-color: white;
@@ -39,3 +44,8 @@ button.arrow{
     padding: 1%;
     
 }
+.socialbutton{
+    margin:2%;
+    margin-left: 4%;
+}
+

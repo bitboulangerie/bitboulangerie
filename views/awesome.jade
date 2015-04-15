@@ -1,18 +1,26 @@
 extends layout
 
+extends layout
+
 block content
     .container-fluid
         #vmiddle.row
-            .col-md-3.col-sm-12.col-xs-12
-                h1 BitBoulanger
-                p Feeding the New Economy
-
-                a(href='//facebook.com/blackbitcoiners')
-                                button.arrow facebook >
-                a(href='//twitter.com/blackbitcoiners')
-                                button.arrow twitter >
-                a(href='//github.com/blackbitcoiners')
-                                button.arrow github >
-
-            .col-md-8.whitebox.col-sm-12.col-xs-12
-                h1 Awesome!
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                img(src='./images/feeding.png').col-md-12.col-sm-12.col-xs-12
+        .row    
+            .col-md-8.col-md-offset-2.whitebox.col-sm-12.col-xs-12
+                h1 Awesome! We will be in touch.
+        #socialrow.row
+            .col-md-12
+                .col-md-2.col-md-offset-2.whitebox.col-sm-2.col-sm-offset-2
+                    a(href='//facebook.com/bitboulangerie')
+                        i.fa.fa-3x.fa-facebook-square
+                        button.arrow.socialbutton facebook >
+                .col-md-2.col-md-offset-1.whitebox.col-sm-2.col-sm-offset-1
+                    a(href='//twitter.com/bitboulangerie')
+                        i.fa.fa-3x.fa-twitter-square
+                        button.arrow.socialbutton twitter >
+                .col-md-2.col-md-offset-1.whitebox.col-sm-2.col-sm-offset-1
+                    a(href='//github.com/bitboulangerie')
+                        i.fa.fa-3x.fa-github-square
+                        button.arrow.socialbutton github >

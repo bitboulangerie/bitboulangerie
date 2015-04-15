@@ -3,25 +3,30 @@ extends layout
 block content
     .container-fluid
         #vmiddle.row
-            .col-lg-3.col-md-3.col-sm-12.col-xs-12
-                h1
-                    strong BitBoulangerie
-                p Feeding the New Economy
-
-                a(href='//facebook.com/bitboulangerie')
-                                button.arrow facebook >
-                a(href='//twitter.com/bitboulangerie')
-                                button.arrow twitter >
-                a(href='//github.com/bitboulangerie')
-                                button.arrow github >
-
-            .col-lg-8.col-md-8.whitebox.col-sm-12.col-xs-12
+            .col-lg-12.col-md-12.col-sm-12.col-xs-12
+                img(src='./images/feeding.png').col-md-12.col-sm-12.col-xs-12
+        .row
+            .col-lg-8.col-md-8.col-md-push-2.whitebox.col-sm-12.col-xs-12
                 .col-md-12    
                     h1.text-center Want to learn more?
 
-                .col-md-12
+                .col-md-10.col-md-offset-2
                     form(action='submitemail' method='post')
                         input#learnmoreemail(type='text', placeholder='Your Email Address' name='email') 
                 
                         input#learnmoresubmit(type='submit', value='Submit')
                         input(type='hidden' name='source' value='main')
+        #socialrow.row
+            .col-md-12
+                .col-md-2.col-md-offset-2.whitebox
+                    a(href='//facebook.com/bitboulangerie')
+                        i.fa.fa-3x.fa-facebook-square
+                        button.arrow.socialbutton facebook >
+                .col-md-2.col-md-offset-1.whitebox
+                    a(href='//twitter.com/bitboulangerie')
+                        i.fa.fa-3x.fa-twitter-square
+                        button.arrow.socialbutton twitter >
+                .col-md-2.col-md-offset-1.whitebox
+                    a(href='//github.com/bitboulangerie')
+                        i.fa.fa-3x.fa-github-square
+                        button.arrow.socialbutton github >
